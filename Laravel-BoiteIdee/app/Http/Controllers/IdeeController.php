@@ -81,6 +81,10 @@ class IdeeController extends Controller
      */
     public function destroy($id)
     {
+        $idee = Idee::findOrFail($id);
+        $idee->delete();
+    
+        return redirect('/')->with('success', 'supprimer avec succèss');
         //
     }
 }
