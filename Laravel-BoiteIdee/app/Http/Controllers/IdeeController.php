@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Idee;
 use Illuminate\Http\Request;
-use App\Models\Idee;
 
 class IdeeController extends Controller
 {
@@ -71,6 +70,9 @@ class IdeeController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $idee=Idee::find($id);
+        $post_Idee=$request->all();
+        $idee->save($post_Idee);
     }
 
     /**
