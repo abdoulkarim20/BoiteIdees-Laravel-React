@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Idee;
 use Illuminate\Http\Request;
 
 class IdeeController extends Controller
@@ -13,7 +14,7 @@ class IdeeController extends Controller
      */
     public function index()
     {
-        //
+        return Idee::all();
     }
 
     /**
