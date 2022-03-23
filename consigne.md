@@ -7,5 +7,4 @@ le nom d'un controller exemeple (creer un controller medicin) on aura MedecinCon
 declarer les variable en camelCase exemple (variable monAge)
 ## Regle numero 3
 1 Que chaque membre du groupe fork le projet et cree sa propre brance (monNom/partie_nomPartie).
-1.1 exemple de nom de branche (Karim/partie_Controller)
-1.2 pour pusher votre travail faite le sur la brache develop (Je dis bien sur la branche develop)
+
