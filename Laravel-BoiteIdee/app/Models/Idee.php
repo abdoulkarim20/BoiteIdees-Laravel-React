@@ -9,5 +9,5 @@ class Idee extends Model
 {
     use HasFactory;
 
-    protected $fillable=['titre','description','etat'];
+    protected $fillable = ['titre', 'description', 'etat'];
 }
