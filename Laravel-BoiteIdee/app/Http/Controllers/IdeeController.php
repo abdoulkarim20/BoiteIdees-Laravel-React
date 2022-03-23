@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use App\Models\Idee;
+use Illuminate\Http\Request;
 
 class IdeeController extends Controller
 {
@@ -14,7 +14,7 @@ class IdeeController extends Controller
      */
     public function index()
     {
-        //
+        return Idee::all();
     }
 
     /**
@@ -70,6 +70,9 @@ class IdeeController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $idee=Idee::find($id);
+        $post_Idee=$request->all();
+        $idee->save($post_Idee);
     }
 
     /**
@@ -80,6 +83,10 @@ class IdeeController extends Controller
      */
     public function destroy($id)
     {
+        $idee = Idee::findOrFail($id);
+        $idee->delete();
+
+        return redirect('/')->with('success', 'supprimer avec succèss');
         //
     }
 }
