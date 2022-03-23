@@ -70,6 +70,9 @@ class IdeeController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $idee=Idee::find($id);
+        $post_Idee=$request->all();
+        $idee->save($post_Idee);
     }
 
     /**
