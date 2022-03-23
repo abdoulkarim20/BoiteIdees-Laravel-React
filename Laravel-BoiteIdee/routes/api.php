@@ -20,3 +20,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::apiResource('idees',IdeeController::class);
+//Route::post('ideestore',[IdeeController::class,'store'])->name('idee.store');
