@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { NavLink } from "react-router-dom";
 const Header = () => {
     return (
         <div>
@@ -16,9 +16,6 @@ const Header = () => {
                             </li>
                             <li className="nav-item">
                                 <NavLink className="nav-link active" exact to="/Ajout" aria-current="page" href="#">ajouter une idee</NavLink>
-                            </li>
-                            <li className="nav-item">
-                                <NavLink className="nav-link active" exact to="/test" aria-current="page" href="#">test table</NavLink>
                             </li>
                         </ul>
                     </div>
