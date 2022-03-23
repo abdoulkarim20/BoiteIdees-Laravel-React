@@ -82,7 +82,7 @@ class IdeeController extends Controller
     {
         $idee = Idee::findOrFail($id);
         $idee->delete();
-    
+
         return redirect('/')->with('success', 'supprimer avec succèss');
         //
     }
