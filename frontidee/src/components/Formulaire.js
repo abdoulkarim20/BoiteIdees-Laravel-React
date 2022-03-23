@@ -1,4 +1,4 @@
-import img1 from '../../public/img1.png';
+
 
 function Formulaire() {
         return(
@@ -25,7 +25,7 @@ function Formulaire() {
                         </form>
                     </div>
                     <div className="col-md-6  col-sm-12 col-lg-4 ">
-                        <img src={img1} alt=""/>
+                        <img src="/img1.png" alt=""/>
                     </div>
                 </div>
             </div>
