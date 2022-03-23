@@ -6,3 +6,8 @@ Le nom d'un model commence toujours par majuscule et toujours au singulier
 le nom d'un controller exemeple (creer un controller medicin) on aura MedecinController
 declarer les variable en camelCase exemple (variable monAge)
 ## Regle numero 3
+#### 3.1 Que chaque membre du groupe fork le projet et cree sa propre brance (monNom/partie_nomPartie).
+#### 3.2 exemple de nom de branche (Karim/partie_Controller)
+#### 3.3 pour pusher votre travail faite le sur la brache develop (Je dis bien sur la branche develop)
+
+
