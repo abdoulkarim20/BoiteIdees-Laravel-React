@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Idee;
 
 class IdeeController extends Controller
 {
@@ -34,7 +35,7 @@ class IdeeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Idee::create($request->all());
     }
 
     /**

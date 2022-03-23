@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Idee extends Model
 {
     use HasFactory;
+
+    protected $fillable=['titre','description','etat'];
 }
