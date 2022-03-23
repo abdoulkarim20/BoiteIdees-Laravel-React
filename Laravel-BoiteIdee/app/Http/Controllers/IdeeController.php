@@ -36,6 +36,7 @@ class IdeeController extends Controller
     public function store(Request $request)
     {
         Idee::create($request->all());
+        return "vous avez ajouter une idee";
     }
 
     /**
@@ -44,9 +45,10 @@ class IdeeController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Idee $idee)
     {
-        //
+        $idee->find($idee);
+        return (['messsage' => $idee]);
     }
 
     /**
@@ -69,10 +71,9 @@ class IdeeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
-        $idee=Idee::find($id);
-        $post_Idee=$request->all();
-        $idee->save($post_Idee);
+        $idee = Idee::find($id);
+        $idee->update($request->all());
+        return $idee;
     }
 
     /**
@@ -86,7 +87,7 @@ class IdeeController extends Controller
         $idee = Idee::findOrFail($id);
         $idee->delete();
 
-        return redirect('/')->with('success', 'supprimer avec succèss');
+        return ("idee supprimer");
         //
     }
 }
