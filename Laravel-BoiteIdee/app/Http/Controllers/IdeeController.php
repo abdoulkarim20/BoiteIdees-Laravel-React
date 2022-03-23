@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Models\Idee;
 use Illuminate\Http\Request;
-use App\Models\Idee;
 
 class IdeeController extends Controller
 {
