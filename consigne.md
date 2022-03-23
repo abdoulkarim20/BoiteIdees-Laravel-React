@@ -1,3 +1,4 @@
+# Nb avant de commencer le projet il faut insataller composer dans le projet et puisque git ignore ignore egalement le fichier .env donc veuillez modifier exemple.env pour mettre votre base de donnees afin de pouvoir faire vos migration
 ## Regle numero 1
 Creer une api avec en adpotant la routing par la methode ressource
 ## Regle numero 2
