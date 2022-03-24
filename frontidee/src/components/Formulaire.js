@@ -10,11 +10,7 @@ function Formulaire() {
                                 <label htmlFor="titre" className="form-label">Titre</label>
                                 <input type="text" className="form-control" id="titre"/>
                             </div>
-                            <div className="mb-3">
-                                <label htmlFor="etat" className="form-label">Etat</label>
-                                <input type="text" className="form-control" id="etat"/>
 
-                            </div>
                             <div className="mb-3">
                                 <label htmlFor="description" className="form-label">Description</label>
                                 <textarea className="form-control" id="description" rows="3"></textarea>
@@ -25,7 +21,7 @@ function Formulaire() {
                         </form>
                     </div>
                     <div className="col-md-6  col-sm-12 col-lg-4 ">
-                        <img src="/img1.png" alt=""/>
+                        <img src="/img1.png" alt="" style={wh}/>
                     </div>
                 </div>
             </div>
