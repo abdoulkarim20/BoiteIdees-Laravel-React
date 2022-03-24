@@ -1,12 +1,13 @@
-import logo from './logo.svg';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Formulaire from './components/Formulaire';
-
+import Test from './components/Test';
 function App() {
   return (
-    <div className="App">
-      <Formulaire />
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path='/' component={Test} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 
