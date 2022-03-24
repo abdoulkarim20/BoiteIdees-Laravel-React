@@ -21,7 +21,7 @@ function Formulaire() {
                         </form>
                     </div>
                     <div className="col-md-6  col-sm-12 col-lg-4 ">
-                        <img src="/img1.png" alt="" style={wh}/>
+                        <img src="/img1.png" alt="" style={{width:450}}/>
                     </div>
                 </div>
             </div>
