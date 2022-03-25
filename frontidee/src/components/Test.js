@@ -1,10 +1,10 @@
 import React from 'react';
+import Formulaire from "./Formulaire";
 
 const Test = () => {
     return (
-        <div>
-            <h1>Je suis la page test des routes</h1>
-        </div>
+
+            <Formulaire/>
     );
 };
 

@@ -1,14 +1,13 @@
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 import './App.css';
-import Test from './components/Test';
+import Formulaire from './components/Formulaire';
+
 function App() {
-  return (
-    <BrowserRouter>
-      <Switch>
-        <Route path='/' component={Test} />
-      </Switch>
-    </BrowserRouter>
-  );
+    return (
+        <div className="App">
+            <Formulaire/>
+        </div>
+    );
 }
 
 export default App;
