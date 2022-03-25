@@ -1,5 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+<<<<<<< HEAD
+import Formulaire from './components/Formulaire';
+
+function App() {
+    return (
+        <div className="App">
+            <Formulaire/>
+        </div>
+    );
+=======
+import Formulaire from "./components/Formulaire";
 
 function App() {
   return (
@@ -17,9 +28,11 @@ function App() {
         >
           Learn React
         </a>
+                    <Formulaire/>
       </header>
     </div>
   );
+>>>>>>> aicha/affichageIdee
 }
 
 export default App;
